@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>ToDoMore</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="public/css/layout.css" type="text/css" rel="stylesheet"/>
+    <link href="public/css/todo.css" type="text/css" rel="stylesheet"/>
+    <link href="public/css/elements.css" type="text/css" rel="stylesheet"/>
+    <script src="public/js/vendor.bundle.js"></script>
+    <script>
+        state = {
+            locale: 'ru'
+        };
+    </script>
+</head>
+<body>
+<section class="menu js-main-menu">
+    <a class="logo" href="/">
+        <img src="public/img/layout/logo.png"/>
+    </a>
+    <ul class="menu-holder">
+        <li>
+            <a class="menu__item" href="#">Item link 1</a>
+        </li>
+        <li>
+            <a class="menu__item" href="#">Item link 2</a>
+        </li>
+        <li>
+            <a class="menu__item" href="#">Item link 3</a>
+        </li>
+        <li>
+            <a class="menu__item" href="#">Item link 4</a>
+        </li>
+    </ul>
+    <div class="language">
+        <a href="#" class="js-change-language" data-lang="ru">Русский</a>
+        <a href="#" class="js-change-language" data-lang="en">English</a>
+    </div>
+</section>
+<section class="page">
+    <header class="header">
+        <section class="header__content js-header-content">
+            <div class="header__button js-adding-button js-header-button">
+                <a class="js-form-toggle-button" href="#">
+                    <img src="public/img/layout/add.svg"/>
+                </a>
+            </div>
+            <div class="header__button">
+                <a class="js-profile-menu-btn" href="#">
+                    <img src="public/img/layout/user-icon.svg"/>
+                </a>
+            </div>
+        </section>
+    </header>
+    <section class="page__content" id="js-container">
+
+    </section>
+</section>
+<script src="public/js/app.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+li.list-item.js-list-item(id=itemId)
+  div.list-item__content
+    div.list-item__title
+      div.checkbox.list-item__title-check.js-checkbox
+        div.checkbox__check
+      div.list-item__title-name.js-list-item-toggle #{name}
+        div.list-item__title-type.todo-type(class=type)
+          span.js-translateble(data-locale-section="todoTypes", data-locale-name=type) #{typeName}
+          span.todo-type__circle
+    div.list-item__description #{description}

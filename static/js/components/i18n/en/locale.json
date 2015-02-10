@@ -1,0 +1,20 @@
+{
+  "todoTypes": {
+    "private": "Private",
+    "job": "Work"
+  },
+  "dates": {
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "yesterday": "Yesterday"
+  },
+  "forms": {
+    "startDate": "Start Date",
+    "finishDate": "Finish Date",
+    "todoDescription": "Task Description",
+    "todoTitle": "Task Title"
+  },
+  "buttons": {
+    "add": "Add"
+  }
+}

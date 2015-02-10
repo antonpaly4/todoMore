@@ -1,0 +1,27 @@
+{
+  "name": "todoMore",
+  "version": "1.0.0",
+  "authors": [
+    "antonpaly4 <anton.korchagin@takestep.ru>"
+  ],
+  "main": "index.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "todomore.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "jade": "~1.9.1",
+    "bower-jquery-ui-datepickers": "*",
+    "jquery-ui": "~1.11.2"
+  }
+}

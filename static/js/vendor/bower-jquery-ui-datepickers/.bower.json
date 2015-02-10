@@ -1,0 +1,20 @@
+{
+  "name": "jquery-ui-datepicker-languages",
+  "description": "jQuery UI datepicker languages.",
+  "keywords": [
+    "jquery",
+    "ui",
+    "language"
+  ],
+  "homepage": "https://github.com/vstene/bower-jquery-ui-datepickers",
+  "_release": "15f5ada089",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "15f5ada089fb8ec94738930b7f9d1a22d17409c7"
+  },
+  "_source": "git://github.com/vstene/bower-jquery-ui-datepickers.git",
+  "_target": "*",
+  "_originalSource": "bower-jquery-ui-datepickers",
+  "_direct": true
+}

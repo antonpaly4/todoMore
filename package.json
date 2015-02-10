@@ -1,0 +1,36 @@
+{
+  "name": "todoMore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "webpack": "^1.5.3"
+  },
+  "devDependencies": {
+    "backbone": "^1.1.2",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-concat": "^2.4.3",
+    "gulp-csso": "^1.0.0",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-jade": "^0.11.0",
+    "gulp-stylus": "^2.0.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.3",
+    "imports-loader": "^0.6.3",
+    "jade": "^1.9.1",
+    "jade-loader": "^0.7.1",
+    "json-loader": "^0.5.1",
+    "moment": "^2.9.0",
+    "nib": "^1.1.0",
+    "tempus": "^0.1.10",
+    "underscore": "^1.7.0",
+    "webpack": "^1.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AntonPaly4",
+  "license": "MIT"
+}

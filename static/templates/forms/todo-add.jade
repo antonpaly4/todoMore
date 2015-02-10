@@ -1,0 +1,10 @@
+div.form.js-form-handler(class=formClass)
+  form.js-form(data-action=formAction)
+    input.form__input.js-date(name='startDate', placeholder=placeholders.start, value=defaultStart)
+    input.form__input.js-date(name='finishDate', placeholder=placeholders.finish, value=defaultStart)
+    input.form__input(name='title', placeholder=placeholders.title)
+    select(name='type')
+      each item in types
+        option.js-translateble(value=item['type'], data-locale-section="todoTypes", data-locale-name=item['type'])= item['typeName']
+    textarea.form__textarea(name='description', placeholder=placeholders.desc)
+    button.button.js-translateble.js-form-submit(data-locale-section="buttons", data-locale-name="add") #{buttonText}

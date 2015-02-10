@@ -1,0 +1,21 @@
+{
+  "todoTypes": {
+    "private": "Личное",
+    "job": "Работа"
+  },
+  "dates": {
+    "today": "Сегодня",
+    "tomorrow": "Завтра",
+    "yesterday": "Вчера"
+  },
+  "forms": {
+    "startDate": "Дата начала",
+    "finishDate": "Дата окончания",
+    "todoDescription": "Описание задачи",
+    "todoTitle": "Название задачи"
+  },
+  "buttons": {
+    "add": "Добавить"
+  }
+
+}
