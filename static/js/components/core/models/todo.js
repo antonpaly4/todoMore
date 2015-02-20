@@ -11,6 +11,10 @@ var TodoModel = Backbone.Model.extend({
     type: '',
     title: '',
     description: ''
+  },
+
+  validate: function(data){
+    console.log(1);
   }
 });
 

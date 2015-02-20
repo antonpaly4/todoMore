@@ -33,10 +33,17 @@ function _translate(elements, lang){
   _.each(elements, function(el){
     var $el = $(el)
       , section = $el.data('localeSection')
-      , word = $el.data('localeName');
-    $el.text(lang[section][word]);
+      , word = lang[section][$el.data('localeName')];
+
+    if(section == 'placeholders'){
+      $el.attr('placeholder', word)
+    }
+    else {
+      $el.text(word);
+    }
   });
 }
+
 
 function _calculate(elements, lang){
   _.each(elements, function(el){

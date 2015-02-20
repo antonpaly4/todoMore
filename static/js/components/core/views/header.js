@@ -21,16 +21,16 @@ var HeaderView = Backbone.View.extend({
 
   _formTodo: function(){
     var $place = $(this.el).find('.js-adding-button')
-      , formsLocale = locale.forms
+      , placeholdersLocale = locale.placeholders
       , tplData = {
           formClass: 'header-form',
           formAction: 'Todo:add',
           defaultStart: moment().format(state.locale == 'ru' ? 'D.M.YYYY' : 'M/D/YYYY'),
           placeholders: {
-            start: formsLocale.startDate,
-            finish: formsLocale.finishDate,
-            title: formsLocale.todoTitle,
-            desc: formsLocale.todoDescription
+            start: placeholdersLocale.startDate,
+            finish: placeholdersLocale.finishDate,
+            title: placeholdersLocale.todoTitle,
+            desc: placeholdersLocale.todoDescription
           },
           types: [
             {type: 'job', typeName: locale.todoTypes.job},
@@ -61,7 +61,6 @@ var _formToggle = function(e){
 };
 
 var _formSend = function(form){
-  console.log(3);
   var $formHandler = form.closest('.js-form-handler')
     , action = form.data('action')
     , data = {}
@@ -79,13 +78,9 @@ var _formSend = function(form){
 
 $(document)
   .on('click', '.js-form-toggle-button', _formToggle)
-  //.on('click', '.js-form-submit', function(){
-  //  console.log(1);
-  //  _formSend($(this).closest('.js-form'));
-  //})
   .on('submit', '.js-form', function(e){
     e.preventDefault();
-    console.log(2);
+
     _formSend($(this));
     return false;
   })
