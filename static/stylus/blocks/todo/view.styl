@@ -1,0 +1,60 @@
+.todo-view
+  height 100%
+
+  &-header
+    border-bottom $sectionBorder 1px solid
+    background $todoHeaderFullBg
+    size 100% $headerHeight
+    padding 15px
+    line-height 30px
+    font-size 18px
+
+    & span
+      color #042AE8
+
+  &-footer
+    size 100% $headerHeight
+    border-top $sectionBorder 1px solid
+    background $todoListBg
+    padding 15px
+    absolute left bottom 0
+
+    & .button
+      margin-right 10px
+
+      &.action_remove
+        float right
+        margin-right 0
+
+  &__info
+    overflow-y auto
+
+  &__full
+    padding 15px
+    background $todoDescBg
+    border-bottom $sectionBorder 1px solid
+
+  &__peoples
+    margin-bottom 10px
+
+    &-title
+      margin-right 10px
+
+  &__description
+    max-height 100px
+    overflow hidden
+    word-wrap break-word
+
+    &.active
+      max-height none
+
+  &__comments
+    padding 15px
+
+    &-title
+      font-size 18px
+      margin-bottom 10px
+
+    &-all
+      font-size 14px
+      text-decoration underline

@@ -9,4 +9,4 @@ require('./components/language/index');
 
 require('./components/core/fasade/index');
 
-var todo = require('./components/dashboard/');
+//var todo = require('./components/dashboard/');

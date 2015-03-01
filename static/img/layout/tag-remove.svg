@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title> Tag remove</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-955.000000, -74.000000)">
+            <g id="Todo-full" sketch:type="MSLayerGroup" transform="translate(809.000000, -1.000000)">
+                <g id="Full-description" transform="translate(1.000000, 60.000000)">
+                    <g id="Linked-people" transform="translate(15.000000, 13.000000)">
+                        <g id="-Tag-remove" transform="translate(131.000000, 3.000000)">
+                            <circle id="Oval-34" stroke="#006FFF" sketch:type="MSShapeGroup" cx="7" cy="7" r="7"></circle>
+                            <text id="X" sketch:type="MSTextLayer" font-family="Avenir Next" font-size="9" font-weight="normal" fill="#006FFF">
+                                <tspan x="4" y="10">X</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

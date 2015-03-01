@@ -2,11 +2,9 @@
 <html>
 <head lang="ru">
     <meta charset="UTF-8">
-    <title>ToDoMore</title>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href="public/css/layout.css" type="text/css" rel="stylesheet"/>
-    <link href="public/css/todo.css" type="text/css" rel="stylesheet"/>
-    <link href="public/css/elements.css" type="text/css" rel="stylesheet"/>
+    <title>let'sDo!</title>
+  <link href='http://fonts.googleapis.com/css?family=Arimo:400,700&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <link href="public/css/style.css" type="text/css" rel="stylesheet"/>
     <script src="public/js/vendor.bundle.js"></script>
     <script>
         state = {
@@ -15,47 +13,175 @@
     </script>
 </head>
 <body>
+<section class="page">
 <section class="menu js-main-menu">
+  <div class="vbox">
     <a class="logo" href="/">
-        <img src="public/img/layout/logo.png"/>
+        let'sDo!
     </a>
-    <ul class="menu-holder">
+    <div class="vbox-content">
+      <div class="menu__account">
+        <a class="menu__account__user js-account-menu-btn" href="#">
+          <img src="public/img/layout/user-icon.svg" width="30" height="30"/>
+        </a>
+      </div>
+      <ul class="menu-holder">
         <li>
-            <a class="menu__item" href="#">Item link 1</a>
+          <a class="menu__item active" href="#todo">Todo</a>
         </li>
         <li>
-            <a class="menu__item" href="#">Item link 2</a>
+          <a class="menu__item" href="#">Item link 2</a>
         </li>
         <li>
-            <a class="menu__item" href="#">Item link 3</a>
+          <a class="menu__item" href="#">Item link 3</a>
         </li>
         <li>
-            <a class="menu__item" href="#">Item link 4</a>
+          <a class="menu__item" href="#">Item link 4</a>
         </li>
-    </ul>
-    <div class="language">
+      </ul>
+  </div>
+    <footer class="menu-footer">
+      <div class="menu-footer__language">
         <a href="#" class="js-change-language" data-lang="ru">Русский</a>
         <a href="#" class="js-change-language" data-lang="en">English</a>
-    </div>
+      </div>
+      <a class="menu-footer__logout" href="#logout"></a>
+    </footer>
+  </div>
 </section>
-<section class="page">
-    <header class="header">
-        <section class="header__content js-header-content">
-            <div class="header__button js-adding-button js-header-button">
-                <a class="js-form-toggle-button" href="#">
-                    <img src="public/img/layout/add.svg"/>
-                </a>
+<section class="page-content">
+<section class="page-app js-page-container">
+  <section class="todo page-half">
+    <section class="vbox">
+      <header class="todo-header js-translateble">
+        Todo
+        <a class="button add" href="#">+</a>
+      </header>
+      <section class="vbox-content">
+        <section class="vbox-container">
+          <section class="todo-list">
+            <div class="todo-day active">
+              <a class="todo-day__title js-todo-day-link" href="#">Today, 1th March</a>
+              <div class="todo-day__items">
+                <!-- Todo Item -->
+                <div class="todo-item active">
+                  <div class="todo-item__holder">
+                    <div class="checkbox">
+                      <div class="checkbox-check">
+                        <div class="checkbox-check__check"></div>
+                      </div>
+                    </div>
+                    <div class="todo-item__name">title of the task</div>
+                    <div class="todo-item__type">
+                      <div class="todo-type private">
+                        <div class="todo-type__circle"></div>
+                        Private
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="header__button">
-                <a class="js-profile-menu-btn" href="#">
-                    <img src="public/img/layout/user-icon.svg"/>
-                </a>
+            <div class="todo-day">
+              <a class="todo-day__title js-todo-day-link" href="#">Tomorrow, 3th March</a>
             </div>
+            <div class="todo-day">
+              <a class="todo-day__title js-todo-day-link" href="#">Tuesday, 4th March</a>
+            </div>
+          </section>
         </section>
-    </header>
-    <section class="page__content" id="js-container">
-
+      </section>
+      <footer class="todo-footer">
+        <div class="checkbox">
+          <div class="checkbox-check">
+            <div class="checkbox-check__check"></div>
+          </div>
+          Mark all as completed
+        </div>
+      </footer>
     </section>
+  </section>
+  <!-- VIEW -->
+  <section class="todo-view page-half">
+    <section class="vbox">
+      <header class="todo-view-header">
+        Start: <span>Today</span>
+      </header>
+      <section class="todo-view__info vbox-content">
+        <section class="vbox-container">
+        <div class="todo-view__full">
+          <div class="todo-view__peoples">
+            <span class="todo-view__peoples-title">Peoples:</span>
+            <span class="tag"><a href="#">Will Smith</a><a href="#" class="tag-close"></a></span>
+            <span class="tag"><a href="#">Marshall Mathers</a><a href="#" class="tag-close"></a></span>
+            <span class="tag"><a href="#">B-Real</a><a href="#" class="tag-close"></a></span>
+          </div>
+          <div class="todo-view__description">
+            Every day GoSquared’s tracking infrastructure processes billions of HTTP requests. We’ve spent a lot of time making the servers that process these requests as efficient as possible. We try to reduce the average payload size of those requests as much as possible to keep bandwidth low.
+            <br/>A typical tracking request<br/>
+            The average response in one of our tracking requests looks something like this<br/>
+            That’s ten bytes. Now, you might think that’s pretty damn small but there’s a problem. Here are the actual bytes that get sent over the wire from one of our servers to serve that request:
+          </div>
+        </div>
+        <div class="todo-view__comments">
+          <div class="todo-view__comments-title">
+            Comments <a href="#" class="todo-view__comments-all">show all (14)</a>
+          </div>
+          <div class="js-comments-list">
+            <div class="comment">
+              <div class="comment__image">
+                <a href="#">
+                  <img src="public/img/layout/no-avatar.png" width="50" height="50">
+                </a>
+              </div>
+              <div class="comment__content">
+                <div class="comment__content-author">
+                  <a href="#">Marshall Mathers</a>
+                </div>
+                <div class="comment__content-text">
+                  Ouch! That’s quite a lot of extra stuff added to the actual message body. Those headers add up. If you’re unfamiliar with the behaviour of the Transfer-Encoding header, you may also be wondering what’s up with that 10\r\n...\r\n0\r\n\r\n wrapped around our response payload. It’s called chunked encoding and is a way of sending data over HTTP when you don’t know in advance exactly how big the payload will be.
+                </div>
+                <div class="comment__content-date">Yesterday at 1:45 am</div>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="comment__image">
+                <a href="#">
+                  <img src="public/img/layout/no-avatar.png" width="50" height="50">
+                </a>
+              </div>
+              <div class="comment__content">
+                <div class="comment__content-author">
+                  <a href="#">Marshall Mathers</a>
+                </div>
+                <div class="comment__content-text">
+                  Ouch! That’s quite a lot of extra stuff added to the actual message body. Those headers add up. If you’re unfamiliar with the behaviour of the Transfer-Encoding header, you may also be wondering what’s up with that 10\r\n...\r\n0\r\n\r\n wrapped around our response payload. It’s called chunked encoding and is a way of sending data over HTTP when you don’t know in advance exactly how big the payload will be.
+                </div>
+                <div class="comment__content-date">Yesterday at 1:45 am</div>
+              </div>
+            </div>
+            <div class="comment__add">
+              <div class="comment__add-holder">
+                <div class="comment__add-image">
+                  <img src="public/img/layout/no-avatar.png" width="30" height="30"/>
+                </div>
+                <textarea name="comment" placeholder="Add comment"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+      </section>
+      <footer class="todo-view-footer">
+        <a class="button action_add" href="#">Add Subtask</a>
+        <a class="button action_add" href="#">Add People</a>
+        <a class="button action_add" href="#">Add Type</a>
+        <a class="button action_remove" href="#">Remove</a>
+      </footer>
+    </section>
+  </section>
+</section>
+</section>
 </section>
 <script src="public/js/app.bundle.js"></script>
 </body>

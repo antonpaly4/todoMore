@@ -1,0 +1,25 @@
+.menu-footer
+  absolute left bottom 0
+  size $menuWidth $footerHeight
+  border-top rgba(0, 0, 0, 0.15) 1px solid
+  padding 15px
+
+  &__language
+    font-size 13px
+    height 30px
+    line-height 30px
+    display inline-block
+
+    & a
+      color #ffffff
+
+  &__logout
+    float right
+    display block
+    size 30px 30px
+    background url("../img/layout/shutdown.svg") no-repeat center
+    opacity 0.6
+    transition opacity 300ms ease-out 40ms
+
+    &:hover
+      opacity 1

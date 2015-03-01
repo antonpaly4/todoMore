@@ -1,0 +1,40 @@
+.button
+  box-sizing border-box
+  border-radius $radius
+  border 2px solid
+  text-align center
+  height 30px
+  line-height 25px
+  font-size 14px
+  background #ffffff
+  display inline-block
+  padding 0 12px
+
+  &.add
+    font-size 19px
+    background $addButtonColor
+    float right
+    width 30px
+    border none
+    color #ffffff
+    padding 0
+    line-height 29px
+
+    &:hover
+      background darken($addButtonColor, 10)
+
+  &.action_add
+    border-color $actionAddButton
+    color $actionAddButton
+
+    &:hover
+      background $actionAddButton
+      color #ffffff
+
+  &.action_remove
+    border-color $actionRemoveColor
+    color $actionRemoveColor
+
+    &:hover
+      background $actionRemoveColor
+      color #ffffff

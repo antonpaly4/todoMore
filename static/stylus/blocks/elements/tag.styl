@@ -1,0 +1,19 @@
+.tag
+  display inline-block
+  height 14px
+  position relative
+  padding-right 19px
+  margin-right 5px
+  color $linkColor
+
+  &-close
+    absolute right 0 top -1px
+    opacity 0
+    background url("../img/layout/tag-remove.svg") no-repeat center
+    size 16px
+    transition opacity 300ms ease-out 40ms
+    cursor pointer
+    display block
+
+  &:hover &-close
+    opacity 1

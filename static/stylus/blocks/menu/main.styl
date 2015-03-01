@@ -1,0 +1,48 @@
+.menu
+  display table-cell
+  float none
+  vertical-align top
+  size($menuWidth, 100%)
+  background $menuBg
+
+  &__account
+    size $menuWidth 60px
+    padding 15px
+    background-color rgba(256, 256, 256, 0.1)
+    position relative
+
+    &__user
+      display inline-block
+      size 47px 30px
+      padding-right 17px
+      background url("../img/layout/Menu-acc-btn.svg") no-repeat right center
+      box-sizing border-box
+
+  &-holder
+    width 100%
+
+  &__item
+    size($menuWidth, 50px)
+    transition background-color 200ms ease-in 50ms
+    transition color 200ms ease-in 50ms
+    display block
+    line-height 49px
+    text-decoration none
+    color $menuColor
+    font-size 16px
+    padding-left 15px
+    background-color rgba(256, 256, 256, 0.1)
+    box-sizing border-box
+    border-top rgba(256, 256, 256, 0.2) 1px solid
+    border-bottom rgba(0, 0, 0, 0.1) 1px solid
+
+    &:first-child
+      border-top none
+
+    &:hover
+    &.active
+      background-color transparent
+      color #ffffff
+
+
+

@@ -1,0 +1,54 @@
+.comment
+  margin-bottom 10px
+  position relative
+  padding-left 65px
+
+  &__image
+    size 50px
+    absolute left top
+
+    & img
+      border-radius 25px
+
+  &__content
+    padding-bottom 10px
+    border-bottom $commentsBorder 1px solid
+
+    &-author
+      margin-bottom 10px
+
+    &-text
+      max-height 40px
+      overflow hidden
+      word-wrap break-word
+
+      &.active
+        max-height none
+
+    &-date
+      color $noteColor
+      font-size 12px
+
+  &__add
+    margin-left 65px
+    padding 10px
+    background $todoDescBg
+    position relative
+
+    &-holder
+      position relative
+      padding-left 40px
+
+    &-image
+      absolute left top
+      size 30px
+      border-radius 15px
+
+
+    & textarea
+      width 100%
+      height 30px
+      resize none
+
+      &.active
+        height 100px

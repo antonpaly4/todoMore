@@ -1,0 +1,80 @@
+.todo
+  border-right $sectionBorder 1px solid
+  background $todoListBg
+
+  &-header
+    height $headerHeight
+    border-bottom $sectionBorder 1px solid
+    background $todoHeaderBg
+    font-size 16px
+    padding 15px
+    line-height 30px
+    color $headerColor
+    width 100%
+
+  &-footer
+    size 100% $headerHeight
+    border-top $sectionBorder 1px solid
+    background #ffffff
+    padding 23px 15px
+    line-height 14px
+    absolute left bottom 0
+
+  &-list
+    padding 15px
+
+  &-day
+    margin-bottom 20px
+
+    &__title
+      color $dayLinkColor
+
+      &:hover
+        color $dayLinkActiveColor
+
+
+    &__items
+      margin-top 10px
+      display none
+
+    &.active &__title
+      color $dayLinkActiveColor
+    &.active &__items
+      display block
+
+  &-item
+
+    &__holder
+      margin-bottom 10px
+      border-radius 3px
+      border($itemBorder)
+      height 50px
+      padding 18px 10px
+      line-height 14px
+      background-color #ffffff
+      transition background-color 300ms ease-out 40ms
+
+      &:hover
+        background-color lighten($taskActiveBg, 50)
+
+    &__name
+      overflow ellipsis
+      display inline-block
+      width 65%
+
+    &__type
+      float right
+      width 25%
+      text-align right
+
+    &.active &__holder
+      background-color $taskActiveBg
+      border-radius $radius
+      border none
+
+    &.active &__name
+      color #ffffff
+
+    &.active .todo-view
+      display block
+

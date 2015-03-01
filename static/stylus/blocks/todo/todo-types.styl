@@ -1,20 +1,22 @@
 .todo-type
-  size 150px 40px
-  padding-right 32px
+  height 14px
+  line-height 13px
+  padding-right 18px
   font-size 12px
   font-weight 300
   position relative
+  display inline-block
 
   &__circle
-    absolute top 14px right 15px
+    absolute top right 0
     size 12px
     border-radius 6px
 
   &.private
-    color $typeGreen
+    color $typePrivate
 
   &.private &__circle
-    background $typeGreen
+    background $typePrivate
 
   &.job
     color $typeOrange
