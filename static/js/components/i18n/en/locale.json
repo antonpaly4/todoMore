@@ -8,7 +8,7 @@
     "tomorrow": "Tomorrow",
     "yesterday": "Yesterday"
   },
-  "forms": {
+  "placeholders": {
     "startDate": "Start Date",
     "finishDate": "Finish Date",
     "todoDescription": "Task Description",

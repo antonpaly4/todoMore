@@ -8,7 +8,7 @@
     "tomorrow": "Завтра",
     "yesterday": "Вчера"
   },
-  "forms": {
+  "placeholders": {
     "startDate": "Дата начала",
     "finishDate": "Дата окончания",
     "todoDescription": "Описание задачи",
